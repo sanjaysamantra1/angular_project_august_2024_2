@@ -2,11 +2,17 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { OrdinalPipe } from './pipes/ordinal.pipe';
+import { FolderExplorerComponent } from './components/folder-explorer/folder-explorer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, OrdinalPipe, FormsModule],
+  imports: [
+    RouterOutlet,
+    OrdinalPipe,
+    FormsModule,
+    FolderExplorerComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

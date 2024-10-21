@@ -1,0 +1,18 @@
+@if (folderObj.isFolder) {
+  <div (click)="isExpanded=!isExpanded" style="cursor:pointer">
+    📁 <span>{{ folderObj.name }}</span>
+  </div>
+  @if (isExpanded) {
+    <div style="padding-left: 20px;">
+      @for (item of folderObj.items; track item) {
+        <div>
+          <app-folder [folderObj]="item"></app-folder>
+        </div>
+      }
+    </div>
+  }
+}@else{
+    <div>
+        📑 <span>{{ folderObj.name }}</span>
+      </div>
+}
