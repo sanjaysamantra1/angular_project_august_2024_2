@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { OrdinalPipe } from './pipes/ordinal.pipe';
 import { FolderExplorerComponent } from './components/folder-explorer/folder-explorer.component';
+import { MaterialDemoComponent } from './components/material-demo/material-demo.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,8 @@ import { FolderExplorerComponent } from './components/folder-explorer/folder-exp
     RouterOutlet,
     OrdinalPipe,
     FormsModule,
-    FolderExplorerComponent
+    FolderExplorerComponent,
+    MaterialDemoComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
