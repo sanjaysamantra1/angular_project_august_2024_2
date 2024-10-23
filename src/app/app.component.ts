@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { OrdinalPipe } from './pipes/ordinal.pipe';
 import { FolderExplorerComponent } from './components/folder-explorer/folder-explorer.component';
 import { MaterialDemoComponent } from './components/material-demo/material-demo.component';
+import { CounterComponent } from './components/counter/counter.component';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { AddTodoComponent } from './components/add-todo/add-todo.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +16,10 @@ import { MaterialDemoComponent } from './components/material-demo/material-demo.
     OrdinalPipe,
     FormsModule,
     FolderExplorerComponent,
-    MaterialDemoComponent
+    MaterialDemoComponent,
+    CounterComponent,
+    TodoListComponent,
+    AddTodoComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
