@@ -7,6 +7,8 @@ import { MaterialDemoComponent } from './components/material-demo/material-demo.
 import { CounterComponent } from './components/counter/counter.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
+import { EmployeeListComponent } from './components/employee-list/employee-list.component';
+import { AddEmployeeComponent } from './components/add-employee/add-employee.component';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +21,9 @@ import { AddTodoComponent } from './components/add-todo/add-todo.component';
     MaterialDemoComponent,
     CounterComponent,
     TodoListComponent,
-    AddTodoComponent
+    AddTodoComponent,
+    EmployeeListComponent,
+    AddEmployeeComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
